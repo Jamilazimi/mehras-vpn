@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 پرسش و گفتگو
+    url: https://github.com/Jamilazimi/mehras-vpn/discussions
+    about: برای سؤال، تجربه‌ی استفاده و ایده‌های آزاد از Discussions استفاده کنید
+  - name: 📘 راهنمای استفاده
+    url: https://github.com/Jamilazimi/mehras-vpn/blob/main/docs/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D9%85%D9%87%D8%B1%D8%A7%D8%B3.pdf
+    about: راهنمای فارسی ۶ صفحه‌ای (PDF)

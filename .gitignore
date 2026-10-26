@@ -1,0 +1,29 @@
+# وضعیت اجرای برنامه (داده‌های تولیدشده)
+data/servers.json
+data/settings.json
+data/working_cache.json
+data/proxy_backup.json
+data/source_health.json
+data/history.json
+data/selftest_report.json
+data/ir-cidr.txt
+data/logs/
+data/*.json
+
+# هسته و درایور دانلودشده (حجیم‌اند و در اولین اجرا خودکار گرفته می‌شوند)
+data/singbox/
+data/xray/
+
+# کش‌های پایتون
+__pycache__/
+*.pyc
+*.pyo
+
+# فونت‌ها به‌صورت آماده در پروژه هستند؛ نسخه‌های موقت نادیده گرفته می‌شوند
+fonts/*.tmp
+
+# علائم نصب و خروجی‌های موقت تست
+.deps_installed
+.dsh-office-*/
+scratch/
+*.out

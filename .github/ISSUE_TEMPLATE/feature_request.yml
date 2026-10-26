@@ -1,0 +1,42 @@
+name: پیشنهاد یا ایده
+description: قابلیت جدید، بهبود سرعت، یا ایده‌ی خلاقانه
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: چه مشکلی را حل می‌کند؟
+      description: به‌جای راه‌حل، اول مشکل را توضیح بده
+      placeholder: |
+        وقتی شبکه شلوغ است، برنامه چند دقیقه گره‌ی خوب پیدا نمی‌کند...
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: ایده‌ی تو چیست؟
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: حوزه
+      options:
+        - انتخاب و تست گره
+        - منابع و اشتراک‌ها
+        - رابط کاربری
+        - حالت TUN / پروکسی
+        - پایداری و جایگزینی خودکار
+        - مستندات و راهنما
+        - سایر
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: گزینه‌های دیگر یا نمونه‌های مشابه
+      description: برنامه‌های دیگر این کار را چطور انجام می‌دهند؟

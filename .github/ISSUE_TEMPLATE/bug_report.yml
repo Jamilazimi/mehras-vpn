@@ -1,0 +1,93 @@
+name: گزارش باگ
+description: چیزی کار نمی‌کند یا رفتار اشتباه است
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ممنون که گزارش می‌دهی! لطفاً قبل از ارسال، بخش «عیب‌یابی» در README را
+        یک بار ببین. اگر امکانش هست فایل‌های لاگ را هم پیوست کن
+        (`data/logs/app.log` و `data/logs/singbox.log`).
+        ⚠️ فایل `data/custom_sources.json` را هرگز پیوست نکن.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: کدام بخش مشکل دارد؟
+      options:
+        - اتصال برقرار نمی‌شود / گره پیدا نمی‌شود
+        - متصل می‌شود ولی سایت باز نمی‌شود
+        - تلگرام وصل نمی‌شود
+        - سرعت پایین / قطعی مکرر
+        - حالت TUN کار نمی‌کند
+        - رابط کاربری (ظاهر، فونت، راست‌به‌چپ)
+        - نصب هسته / دانلود
+        - سایر
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: چه اتفاقی افتاد؟
+      description: رفتار واقعی و رفتار مورد انتظار
+      placeholder: |
+        انتظار داشتم بعد از زدن دکمه‌ی اتصال به گره وصل شوم، ولی ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: مراحل بازتولید
+      placeholder: |
+        1. برنامه را اجرا کردم
+        2. دکمه‌ی اتصال را زدم
+        3. بعد از ۳۰ ثانیه ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: نسخه‌ی مهراس
+      placeholder: "2.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: حالت اتصال
+      options:
+        - پروکسی سیستم
+        - TUN (کل سیستم)
+        - هر دو را امتحان کردم
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: ویندوز و پایتون
+      placeholder: "Windows 11 24H2 — Python 3.13.15"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: لاگ‌ها (اختیاری ولی خیلی کمک می‌کند)
+      description: ۵۰ خط آخر `data/logs/app.log` و اگر بود `data/logs/singbox.log`
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: بررسی‌های نهایی
+      options:
+        - label: نسخه‌ی آخر را از `main` گرفته‌ام
+          required: true
+        - label: مطمئن شدم لینک اشتراک یا UUID شخصی در متن یا لاگ نیست
+          required: true
